@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="loginForm" class="login-form">
+            <h2>Login</h2>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <small id="emailError" class="error-message"></small>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Enter your password" class="password-input" required>
+                    <span id="togglePassword" class="toggle-password">Show</span>
+                </div>
+                <small id="passwordError" class="error-message"></small>
+            </div>
+
+            <div>
+                <input type="checkbox" id="rememberMe" name="rememberMe">Remember Me
+            </div>
+
+            <div class="input-group">
+                <button type="submit" id="loginButton">Login</button>
+            </div>
+
+            <div id="loadingSpinner" class="spinner" style="display:none;"></div>
+            <div id="loginMessage" class="login-message"></div>
+        </form>
+        <div class="footer">
+            <footer>Made With ❤️ In India</footer>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
